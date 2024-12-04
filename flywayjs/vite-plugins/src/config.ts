@@ -7,7 +7,7 @@ export const config: Config.Data = {
 	eps: {
 		enable: true,
 		api: "",
-		dist: "./build/cool",
+		dist: "./build/flyway",
 		mapping: [
 			{
 				// 自定义匹配

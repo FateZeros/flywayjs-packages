@@ -4,7 +4,7 @@ import { virtual } from "./virtual";
 import type { Config } from "../types";
 import { merge } from "lodash";
 
-export function cool(options: Config.Options) {
+export function flyway(options: Config.Options) {
 	// 应用类型，admin | app
 	config.type = options.type;
 
