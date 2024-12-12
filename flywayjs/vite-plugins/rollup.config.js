@@ -3,20 +3,20 @@ import typescript from "@rollup/plugin-typescript";
 import { defineConfig } from "rollup";
 
 export default defineConfig({
-  input: ["src/index.ts"],
+	input: ["src/index.ts"],
 
-  external: ["lodash"],
+	external: ["lodash"],
 
-  output: {
-    name: "index",
-    format: "umd",
-    file: "dist/index.js",
-  },
+	output: {
+		name: "index",
+		format: "umd",
+		file: "dist/index.js",
+	},
 
-  plugins: [
-    typescript({
-      module: "esnext",
-      exclude: ["./node_modules/**"],
-    }),
-  ],
+	plugins: [
+		typescript({
+			module: "esnext",
+			exclude: ["./node_modules/**"],
+		}),
+	],
 });
